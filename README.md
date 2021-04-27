@@ -14,8 +14,3 @@ The MetaPool & MetaPool Factory are functional and integrated with the Uniswap V
 
 The primary issue the project is facing is front-running: currently a miner can run a "sandwich attack" to skew the pool price before a rebalancing call.
 
-## Want to contribute? Want to use this code in your project?
-
-DM me :)
-
-@dmihal
