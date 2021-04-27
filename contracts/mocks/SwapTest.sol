@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.7.6;
 
-import { IERC20Minimal } from "../uniswap-v3/interfaces/IERC20Minimal.sol";
-import { IUniswapV3SwapCallback } from "../uniswap-v3/interfaces/callback/IUniswapV3SwapCallback.sol";
-import { IUniswapV3Pool } from "../uniswap-v3/interfaces/IUniswapV3Pool.sol";
+import { IERC20Minimal } from "@uniswap/v3-core/contracts/interfaces/IERC20Minimal.sol";
+import { IUniswapV3SwapCallback } from "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol";
+import { IUniswapV3Pool } from "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol";
 
 contract SwapTest is IUniswapV3SwapCallback {
     function swap(
@@ -43,8 +43,6 @@ contract SwapTest is IUniswapV3SwapCallback {
             );
         }
     }
-
-
 
     function getSwapResult(
         address pool,
